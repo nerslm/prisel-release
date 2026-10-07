@@ -1,0 +1,48 @@
+name: 问题 · Bug
+description: 程序出错或行为不对 · Something is broken
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: 请不要贴出 API key、令牌或不想公开的代码。Do not paste API keys, tokens or code you would not publish.
+  - type: textarea
+    id: what
+    attributes:
+      label: 发生了什么？ · What happened?
+      description: 尽量具体，附上报错信息。Be specific and include any error message.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 怎么复现 · Steps to reproduce
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: 版本 · Version
+      description: prisel --version
+    validations:
+      required: true
+  - type: dropdown
+    id: system
+    attributes:
+      label: 系统 · System
+      options: [Linux, macOS, Windows, WSL]
+    validations:
+      required: true
+  - type: dropdown
+    id: backend
+    attributes:
+      label: 后端 · Backend
+      options: [Prisel, Claude Code]
+  - type: dropdown
+    id: client
+    attributes:
+      label: 在哪里出现 · Where
+      multiple: true
+      options:
+        - 终端 · Terminal
+        - 网页 · Web (prisel web)
+        - 手机或远程 · Phone or remote (prisel.app)

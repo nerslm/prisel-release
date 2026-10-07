@@ -1,0 +1,25 @@
+Prisel
+Copyright (c) 2026 nerslm. All rights reserved.
+
+Prisel is proprietary software. You may download, install and use it only
+under the Prisel Terms (https://prisel.app/terms). Except as those terms
+allow, no right is granted to copy, modify, distribute, sublicense, sell or
+otherwise provide Prisel, in whole or in part, to others.
+
+Prisel includes third-party components under their own licenses, among them
+pi by Mario Zechner (MIT License), from which Prisel was forked. They are
+listed with their license texts in THIRD_PARTY_NOTICES.txt, which ships with
+Prisel. Nothing in this license limits the rights those licenses give you.
+
+------------------------------------------------------------------------------
+
+Prisel
+版权所有 (c) 2026 nerslm。保留所有权利。
+
+Prisel 是专有软件。你只能按照 Prisel 条款（https://prisel.app/terms）下载、
+安装和使用它。除条款允许的以外，不授予复制、修改、分发、再许可、出售或以其他
+方式向他人提供 Prisel（全部或部分）的任何权利。
+
+Prisel 包含按各自许可提供的第三方组件，其中包括 Prisel 分叉自的、Mario
+Zechner 的 pi（MIT 许可）。这些组件及其许可原文列在随 Prisel 附带的
+THIRD_PARTY_NOTICES.txt 中。本许可不限制这些许可给予你的权利。
