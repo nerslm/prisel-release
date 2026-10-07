@@ -8,7 +8,7 @@ Prisel 每个版本的变化。
 
 ### 不兼容的变更
 
-- Prisel 是专有软件：保留所有权利，按 Prisel 条款（https://prisel.app/terms）使用；条款现在同时适用于软件本身和 prisel.app 服务。Prisel 不再采用 MIT 许可证。每个包都附带 `THIRD_PARTY_NOTICES.txt`，列出所打包的每个第三方组件的许可证，其中包括 Prisel 分叉自的 pi（MIT）；网页端在 `/licenses/THIRD_PARTY_NOTICES.txt` 提供这个文件，prisel.app 的页脚链接到它。0.10.0、0.10.1，以及 0.9.0 的 Linux 和 macOS 平台包，已从 npm 撤下。
+- Prisel 是专有软件：保留所有权利，按 Prisel 条款（<https://prisel.app/terms>）使用；条款现在同时适用于软件本身和 prisel.app 服务。Prisel 不再采用 MIT 许可证。每个包都附带 `THIRD_PARTY_NOTICES.txt`，列出所打包的每个第三方组件的许可证，其中包括 Prisel 分叉自的 pi（MIT）；网页端在 `/licenses/THIRD_PARTY_NOTICES.txt` 提供这个文件，prisel.app 的页脚链接到它。0.10.0、0.10.1，以及 0.9.0 的 Linux 和 macOS 平台包，已从 npm 撤下。
 
 ### 新增
 
@@ -17,7 +17,7 @@ Prisel 每个版本的变化。
 ### 变更
 
 - 隐私政策写明了程序本身会连接哪些服务（配置的模型服务和 MCP 服务、网络搜索服务、models.dev、npm，开启远程访问时还有 prisel.app）；程序没有遥测。账号改为在网页端注销，不再需要到 GitHub 上申请。条款写明使用 Prisel 或登录即表示接受条款，免除或限制责任的条款加粗显示，并提醒 agent 可能会运行命令、修改或删除文件。登录页说明登录或注册即表示接受条款和隐私政策；宿主菜单里的「登录设备」改为「账号」，与它打开的对话框一致。
-- Prisel 的更新日志、帮助和反馈链接，prisel.app 的 GitHub 链接，条款里的反馈链接，以及 npm 包的仓库和 issue 链接，都指向公开的 [nerslm/prisel-release](https://github.com/nerslm/prisel-release) 仓库（存放更新日志、issue 和发布说明；源码仍不公开）。npm 的包页面显示面向用户的 README，不再显示源码工作区的说明；OpenRouter 署名使用 https://prisel.app。
+- Prisel 的更新日志、帮助和反馈链接，prisel.app 的 GitHub 链接，条款里的反馈链接，以及 npm 包的仓库和 issue 链接，都指向公开的 [nerslm/prisel-release](https://github.com/nerslm/prisel-release) 仓库（存放更新日志、issue 和发布说明；源码仍不公开）。npm 的包页面显示面向用户的 README，不再显示源码工作区的说明；OpenRouter 署名使用 <https://prisel.app>。
 
 ## [0.10.1]
 
