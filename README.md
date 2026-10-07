@@ -1,5 +1,5 @@
 <p align="center"><img src="assets/prisel-mark.svg" width="88" alt=""></p>
-<h1 align="center">Prisel</h1>
+<h1 align="center">PRISEL</h1>
 <p align="center">在你自己的电脑上读代码、跑命令、改文件的 agent。终端、浏览器和手机连到同一个会话。<br>
 A coding agent that reads code, runs commands and edits files on your own computer. Terminal, browser and phone attach to the same session.</p>
 <p align="center"><a href="https://prisel.app">prisel.app</a> · <a href="CHANGELOG.md">更新日志 Changelog</a> · <a href="https://github.com/nerslm/prisel-release/issues">反馈 Issues</a></p>
