@@ -1,6 +1,8 @@
+<p align="center"><a href="CHANGELOG.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/lang-en-on-dark.svg"><img src="assets/lang-en-on-light.svg" alt="English" height="30"></picture></a><a href="CHANGELOG.zh-CN.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/lang-zh-off-dark.svg"><img src="assets/lang-zh-off-light.svg" alt="简体中文" height="30"></picture></a></p>
+
 # Changelog
 
-Prisel 每个版本的变化。Changes in each Prisel release.
+Changes in each Prisel release.
 
 ## [0.10.2]
 
