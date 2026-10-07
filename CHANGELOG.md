@@ -18,6 +18,7 @@ Changes in each Prisel release.
 
 - The privacy policy says what the program itself contacts (the configured model and MCP services, the web search service, models.dev, npm and, with remote access, prisel.app); it has no telemetry. Accounts are deleted in the web instead of by asking on GitHub. The terms say that using Prisel or signing in means accepting them, set the clauses that exclude or limit liability in bold, and warn that an agent may run commands and change or delete files. The sign-in page says signing in or registering accepts the terms and the privacy policy, and the host menu's "Signed-in devices" is now "Account", like the dialog it opens.
 - Prisel's changelog, help and feedback links, prisel.app's GitHub link, the terms' feedback link and the npm package's repository and issue links point to the public [nerslm/prisel-release](https://github.com/nerslm/prisel-release) repository (changelog, issues and release notes; the source stays private). npm's package page shows a README for users instead of the source workspace's notes, and OpenRouter attribution names https://prisel.app.
+- Prisel calls itself an agent rather than a coding agent: the terminal's startup header and prisel.app's first page read "TERMINAL SERVICE FOR AGENTS", and the site's title, description and headline drop "coding" (in Chinese, 编程), as does the npm package's description.
 
 ## [0.10.1]
 

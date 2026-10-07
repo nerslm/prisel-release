@@ -18,6 +18,7 @@ Prisel 每个版本的变化。
 
 - 隐私政策写明了程序本身会连接哪些服务（配置的模型服务和 MCP 服务、网络搜索服务、models.dev、npm，开启远程访问时还有 prisel.app）；程序没有遥测。账号改为在网页端注销，不再需要到 GitHub 上申请。条款写明使用 Prisel 或登录即表示接受条款，免除或限制责任的条款加粗显示，并提醒 agent 可能会运行命令、修改或删除文件。登录页说明登录或注册即表示接受条款和隐私政策；宿主菜单里的「登录设备」改为「账号」，与它打开的对话框一致。
 - Prisel 的更新日志、帮助和反馈链接，prisel.app 的 GitHub 链接，条款里的反馈链接，以及 npm 包的仓库和 issue 链接，都指向公开的 [nerslm/prisel-release](https://github.com/nerslm/prisel-release) 仓库（存放更新日志、issue 和发布说明；源码仍不公开）。npm 的包页面显示面向用户的 README，不再显示源码工作区的说明；OpenRouter 署名使用 <https://prisel.app>。
+- Prisel 称自己为 agent，不再说「编程 agent」：终端启动头和 prisel.app 首屏写作 "TERMINAL SERVICE FOR AGENTS"，官网的标题、描述和主标题去掉了「编程」（英文为 coding），npm 包的描述也一样。
 
 ## [0.10.1]
 
