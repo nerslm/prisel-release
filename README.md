@@ -28,11 +28,10 @@ prisel update     # update to the latest release
 ## On your phone and other devices
 
 ```bash
-prisel host remote login --server https://prisel.app   # confirm this computer with your account at the link it prints
-prisel host remote enable
+prisel host remote login   # scan the code it shows with your signed-in phone: the computer joins your account and the phone can use it
 ```
 
-Then open [prisel.app](https://prisel.app) on any device. Conversations and files stay on your computer; traffic between the browser and the computer is end-to-end encrypted.
+Then open [prisel.app](https://prisel.app) on any device. Your computer lets in only devices you paired: one more is added by scanning the code `prisel host remote pair` shows, or by a paired phone scanning the code it shows. Conversations and files stay on your computer; traffic between the browser and the computer is end-to-end encrypted.
 
 ## Feedback
 

@@ -28,11 +28,10 @@ prisel update     # 更新到最新版本
 ## 在手机和其他设备上用
 
 ```bash
-prisel host remote login --server https://prisel.app   # 打开给出的链接，用你的账号确认这台电脑
-prisel host remote enable
+prisel host remote login   # 用已登录的手机扫描它显示的二维码：电脑加入你的账号，手机也随即可以使用它
 ```
 
-然后在任何设备上打开 [prisel.app](https://prisel.app)。对话和文件留在你的电脑上，浏览器和电脑之间端到端加密。
+然后在任何设备上打开 [prisel.app](https://prisel.app)。电脑只放行配对过的设备：添加新设备时，扫描 `prisel host remote pair` 显示的二维码，或者用已配对的手机扫描新设备显示的二维码。对话和文件留在你的电脑上，浏览器和电脑之间端到端加密。
 
 ## 反馈
 

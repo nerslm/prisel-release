@@ -4,18 +4,23 @@
 
 Prisel 每个版本的变化。
 
-## [0.10.2]
+## [0.10.3]
 
 ### 不兼容的变更
 
+- 远程访问只放行电脑信任的浏览器，不论它登录的是哪个账号。每个浏览器在每台电脑上配对一次：扫描 `prisel host remote pair` 打印的二维码（电脑还没有信任任何设备时，`enable` 也会打印），或者让电脑已经信任的设备扫描浏览器显示的二维码。入口签发的凭证现在只能走到配对这一步，因此入口和它的签名密钥都无法放行任何设备。之前连接过的浏览器需要配对一次。浏览器和电脑都必须使用这个版本：电脑在远程通道上发出的第一条消息现在会说明设备是否受信任，旧版浏览器无法识别；这个版本的浏览器遇到旧版电脑时，会提示电脑上的 Prisel 版本过旧。浏览器把设备密钥交给 WebCrypto 保管：它只替页面签名，从不把密钥交给页面，因此混进页面的脚本无法把设备身份带走。在浏览器里退出登录会清除它的配对；电脑重新加入账号或运行 `host remote logout` 都会清空电脑的信任设备列表。
+- 电脑扫一个二维码就能加入账号，入口的设备码页面 `/device` 已移除。`prisel host remote login` 会显示一个二维码；已登录账号的浏览器打开后先确认，然后把电脑加入账号并完成配对，电脑随即开启远程访问并连上。只有自建入口才需要 `--server`，默认是 prisel.app。`enable` 现在只用于给已登录的电脑重新开启远程访问。入口新增 `POST /api/computers/enroll`、`/api/computers/enroll/collect` 和 `/api/computers/claim`，移除了设备码授权和 `/api/computers/bind`，因此旧版 Prisel 无法再加入账号。官网、README 和 prisel.app 上的「添加电脑」都改为显示这两条命令。
 - Prisel 是专有软件：保留所有权利，按 Prisel 条款（<https://prisel.app/terms>）使用；条款现在同时适用于软件本身和 prisel.app 服务。Prisel 不再采用 MIT 许可证。每个包都附带 `THIRD_PARTY_NOTICES.txt`，列出所打包的每个第三方组件的许可证，其中包括 Prisel 分叉自的 pi（MIT）；网页端在 `/licenses/THIRD_PARTY_NOTICES.txt` 提供这个文件，prisel.app 的页脚链接到它。0.10.0、0.10.1，以及 0.9.0 的 Linux 和 macOS 平台包，已从 npm 撤下。
 
 ### 新增
 
+- 宿主菜单里新增「设备」，本地网页和远程都可以使用：列出电脑信任的设备及其指纹和日期，撤销某个设备（它的连接会立即断开），生成用于添加设备的一次性二维码，以及用「扫码批准」扫描新设备显示的二维码来批准它。电脑列表新增「扫一扫」，两种二维码都能识别。扫码使用相机；浏览器无法使用相机时，可以改为拍照或选择图片。终端里，`prisel host remote pair` 把配对码打印成二维码并等待设备扫描，`prisel host remote devices [revoke <指纹>]` 用于查看和撤销。协议新增 `host/remote/devices`、`host/remote/devices/revoke`、`host/remote/devices/approve`、`host/remote/pairing`，以及通知 `host/remote/devicesChanged`。
+- 网页端可以安装到手机和电脑上。入口和本地宿主提供清单文件和图标；电脑列表下方，浏览器提供安装提示时显示「安装」按钮，在 iPhone 和 iPad 上则说明如何「分享 → 添加到主屏幕」。安装后的应用从 `/app` 全屏打开；在 iPhone 上，即使一段时间不打开，配对也会保留。
 - 可以在网页端的「账号」对话框里注销 prisel.app 账号：账号、它的登录方式、所有已登录的浏览器和所有绑定的电脑一并删除，中转也会断开它的电脑和浏览器。注销时需要输入密码；Google、GitHub 和邮箱验证码账号则需要在最近 10 分钟内登录过（`POST /api/account/delete`）。
 
 ### 变更
 
+- prisel.app 的登录页接在入口动画后面，不再替换掉它。未登录时舞台保留：桌面端带粒子结的卡片留在右边，跟着鼠标轻微倾斜，登录面板接替入口动画的读数出现在左边；手机上标志和 PRISEL 移到上方，表单居中接在下面。读数里「请求」一行跟着登录过程变化（需要登录、正在发送验证码、验证码已发送、正在验证、未通过），每次变化都重新解码；登录被拒时，粒子结散开后再重新凝聚。按钮和输入框改用官网的方角样式，底部有一行状态，写明入口地址和端到端加密。
 - 隐私政策写明了程序本身会连接哪些服务（配置的模型服务和 MCP 服务、网络搜索服务、models.dev、npm，开启远程访问时还有 prisel.app）；程序没有遥测。账号改为在网页端注销，不再需要到 GitHub 上申请。条款写明使用 Prisel 或登录即表示接受条款，免除或限制责任的条款加粗显示，并提醒 agent 可能会运行命令、修改或删除文件。登录页说明登录或注册即表示接受条款和隐私政策；宿主菜单里的「登录设备」改为「账号」，与它打开的对话框一致。
 - Prisel 的更新日志、帮助和反馈链接，prisel.app 的 GitHub 链接，条款里的反馈链接，以及 npm 包的仓库和 issue 链接，都指向公开的 [nerslm/prisel-release](https://github.com/nerslm/prisel-release) 仓库（存放更新日志、issue 和发布说明；源码仍不公开）。npm 的包页面显示面向用户的 README，不再显示源码工作区的说明；OpenRouter 署名使用 <https://prisel.app>。
 - Prisel 称自己为 agent，不再说「编程 agent」：终端启动头和 prisel.app 首屏写作 "TERMINAL SERVICE FOR AGENTS"，官网的标题、描述和主标题去掉了「编程」（英文为 coding），npm 包的描述也一样。
