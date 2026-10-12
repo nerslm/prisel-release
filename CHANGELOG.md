@@ -4,6 +4,12 @@
 
 Changes in each Prisel release.
 
+## [0.10.6]
+
+### Fixed
+
+- The web sidebar and the side panel keep their place when they close: on a phone, opening a file or a chat from the drawer and opening the drawer again shows the file tree or the chat list where it was scrolled, with what was expanded and shown; switching between the chats and Files tabs, Hide sidebar on a computer, and showing the archive or a file over the side panel do the same. Each backend's chat list keeps its own place. Closing used to remove them from the page and rebuild them from the top.
+
 ## [0.10.5]
 
 ### Fixed
