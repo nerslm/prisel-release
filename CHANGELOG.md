@@ -4,6 +4,20 @@
 
 Changes in each Prisel release.
 
+## [0.10.4]
+
+### Added
+
+- Files in the web sidebar, on computers and phones: its top now has two tabs, the backend on screen (clicked again, a menu of the backends, which used to be side by side) and Files, a read-only tree of the computer's files from a folder you anchor as the workspace (the open chat's directory at first; the workspace menu has the recent ones and any other folder, and a folder's menu makes it the workspace). A file opens in place of the chat: code highlighted, Markdown rendered or as source, images, PDFs in the browser's reader on a computer (Open PDF on a phone), Download for anything up to 32 MB. Ctrl/⌘+Shift+E shows it. The protocol adds `files/list` and `files/read`; the host and the entry allow the page to frame a PDF it made itself (`frame-src blob:`).
+- Images open in a full-screen viewer: in chats (what you sent, what a tool read, the composer's thumbnails) and in Files. Click to see actual pixels and back, wheel or pinch to zoom, drag to pan, step through a message's images, download.
+- Attach any file in the web composer: pick, drop or paste a PDF, a spreadsheet, a larger image. Images a model can look at still travel in the message; any other file up to 32 MB shows as a chip, is saved on the session's computer in the project's `.prisel/attachments` (which git ignores) when the message is sent, and the message lists its path for the agent to read. Claude Code reads PDFs itself; Prisel's own read tool does not read PDFs yet. The protocol adds `session/upload`.
+
+### Fixed
+
+- On phones, prisel.app's mark no longer comes out squeezed after reloading the page. Safari could run the page's script before its stylesheet sized the drawing, and nothing measured it again; the drawing now follows its own size.
+- With the Claude Code backend, a subagent that `SendMessage` resumes after it finished runs again in the tasks panel, on the web and in the terminal, instead of staying under Finished with its old times.
+- Picking or dropping several images at once into a new chat attached only the first.
+
 ## [0.10.3]
 
 ### Breaking Changes
