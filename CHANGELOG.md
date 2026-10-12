@@ -4,6 +4,12 @@
 
 Changes in each Prisel release.
 
+## [0.10.5]
+
+### Fixed
+
+- The web sidebar's menus (the backend menu, a chat's or a file's …, the workspace menu) are opaque: the list under them no longer shows through their text.
+
 ## [0.10.4]
 
 ### Added
