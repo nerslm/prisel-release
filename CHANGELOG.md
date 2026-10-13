@@ -4,6 +4,12 @@
 
 Changes in each Prisel release.
 
+## [0.10.8]
+
+### Fixed
+
+- The web sidebar's menus open above the list again: with animations on, the search field, the chat list and later chat rows drew over the backend menu and the chats' … menus, so the list showed through and clicks landed on it (Prisel could not be chosen in the backend menu). The entrance animations no longer stay applied once they end.
+
 ## [0.10.7]
 
 ### Fixed
