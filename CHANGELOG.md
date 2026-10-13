@@ -4,6 +4,12 @@
 
 Changes in each Prisel release.
 
+## [0.10.7]
+
+### Fixed
+
+- With the Claude Code backend, Stop ends only the current turn: background agents and background shells keep running, and Claude can still send messages to them. Stop used to kill every one of them, and Claude Code then refused to resume an agent stopped that way.
+
 ## [0.10.6]
 
 ### Fixed
