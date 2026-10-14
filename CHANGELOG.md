@@ -4,6 +4,12 @@
 
 Changes in each Prisel release.
 
+## [0.10.9]
+
+### Added
+
+- Terminals in the web client: **TERM**, beside LAB / PRTS (Ctrl/⌘+`), opens shells on the host's computer, locally and remotely. They belong to the computer and keep running when the page closes or the phone drops its connection; coming back shows the screen as it is now, scrollback included. Tabs hold up to 16 per computer; each starts in the Files workspace. On a computer they are a resizable panel along the bottom. On a phone they fill the screen with a built-in keyboard laid out as Atria's iPhone keyboard (Esc, Tab, ^C, arrows, Ctrl and Alt held or tapped, numbers and symbols, a foldable layout), pinyin with candidates and an offline dictionary, dictation, and touch gestures: tap to click, a finger to scroll, a long press to select and copy, a pinch for the font size, with scrolling and selecting going to programs that use the mouse. Keys tap back (on an iPhone as the finger lifts). The terminal in front draws with WebGL like VS Code's, so block and box characters (Claude Code's logo, program frames) join up. Linux and macOS hosts only for now; pages receive a terminal's output only while showing it.
+
 ## [0.10.8]
 
 ### Fixed
