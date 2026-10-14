@@ -4,6 +4,22 @@
 
 Changes in each Prisel release.
 
+## [0.10.10]
+
+### Added
+
+- On a phone the conversation types with the terminal's built-in keyboard too, kept under it instead of the system keyboard: letters, pinyin (its letters stand in the field until a candidate replaces them), dictation and paste go in at the composer's caret, which stays a real field for placing the caret, selecting, copying and pasting. Esc stops a run or closes the / menu, Tab takes the highlighted command, ↑ ↓ go through earlier messages, Return starts a new line and Ctrl+Return sends; ^C empties the field. Folding leaves the top row and gives the conversation the room. Holding 中/英 hands the field to the system keyboard until it lets go of the focus. Its folding is remembered apart from the terminal's; 中/英 is one setting for both.
+
+### Changed
+
+- New Chat on a phone shows just PRISEL under its mark: "Start a new conversation" ran into the recent chats.
+
+### Fixed
+
+- On an iPhone the folded keyboard showed the top of its letter row under the top row, in the strip by the home indicator; that strip is now plain keyboard glass.
+- On an iPhone the keyboard's fold key and microphone worked once: as the keyboard moved away (or the dictation panel covered the key), the finger's lift went missing and the key stayed held. A key's lift now counts wherever it lands, and a new touch ends a press whose lift never came.
+- Holding 中/英 acts as the finger lifts, so the terminal's one-line composer can bring up the phone's keyboard; the key shows when it has been held long enough.
+
 ## [0.10.9]
 
 ### Added
