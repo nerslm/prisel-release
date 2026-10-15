@@ -4,6 +4,14 @@
 
 Changes in each Prisel release.
 
+## [0.10.16]
+
+### Fixed
+
+- On a computer, a file's or folder's menu in the file tree (Download, Copy path, Make workspace) opens above the rows under it. It was drawn under them, so it looked transparent and a click on it went to the row beneath: the row's actions were centred with a transform, which kept the menu inside them under the later rows.
+- In the iPhone app, the top row's keys and labels move with the keyboard as it folds or unfolds. Keys that changed their look in the moment the keyboard began to move (the microphone and ^C, Backspace and paste, the fold key lit or not) did not follow the motion: their labels stayed pinned to the screen and only showed where a moving key passed. The row now changes only while the keyboard is still (unfolding, just before it slides up; folding, once it has landed), and the fold key no longer shows a press, as on the web.
+- In the iPhone app, dictating with the keyboard folded, the wave and its glow stay in the row instead of sweeping over the page above the keyboard.
+
 ## [0.10.15]
 
 ### Changed
