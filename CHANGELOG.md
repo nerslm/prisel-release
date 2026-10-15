@@ -4,6 +4,16 @@
 
 Changes in each Prisel release.
 
+## [0.10.15]
+
+### Changed
+
+- Dictating with the phone keyboard folded, the row no longer turns into a framed bar: a wave from the microphone wipes its keys, as the unfolded keyboard's microphone does, leaving only the threads of gold light; a touch ends it and a second wave brings the keys back. On the light keyboard the threads are a deeper gold.
+
+### Fixed
+
+- In the iPhone app, folding or unfolding the keyboard no longer leaves the top row's right-hand keys hanging where they were, nor the folded row's microphone and Backspace fading at the bottom: the keys that change between the two rows now move with the keyboard.
+
 ## [0.10.14]
 
 ### Changed
