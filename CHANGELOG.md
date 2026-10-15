@@ -4,6 +4,21 @@
 
 Changes in each Prisel release.
 
+## [0.10.18]
+
+### Added
+
+- A conversation's text scales on its own, apart from the page and from files: two fingers pinching on it on a phone, Ctrl/⌘ with + − 0 or Ctrl with the wheel over it on a computer. The column keeps its width while the text in it grows or shrinks, so smaller text fits more on a line; the scale shows while it changes, a click on it puts it back to 100%, and it is remembered.
+- On a phone, two fingers pinching on a text or Markdown file scale it, as Ctrl with the wheel does on a computer.
+
+### Changed
+
+- Scaling a file's text changes its size, not the size of everything: the text flows anew in the same width, so smaller text fits more on a line (before, a Markdown file's column narrowed with it and a line held as much as ever). A Markdown file now fills the view's width on a computer, in place of a column at most 860 px wide.
+
+### Fixed
+
+- In a Claude Code chat, a background agent that ends shows as Prisel's own subagents do: its description, completed, failed or stopped, opening to its report (and to its conversation while the task list still has it). It showed nothing as it ended, and once the chat reloaded only a line of its summary.
+
 ## [0.10.17]
 
 ### Added
