@@ -4,6 +4,12 @@
 
 Changes in each Prisel release.
 
+## [0.10.14]
+
+### Changed
+
+- Dictating with the phone keyboard folded, its row becomes a dark glass bar with threads of gold light in it, in place of the plain breathing bar: it unfurls from the microphone and folds back into it; quiet, the threads are almost one still line, breathing, and as speech is heard they swing wider and brighten, and the bar glows around (in the app with the voice's loudness).
+
 ## [0.10.13]
 
 ### Changed
