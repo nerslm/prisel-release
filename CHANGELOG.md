@@ -4,6 +4,19 @@
 
 Changes in each Prisel release.
 
+## [0.10.17]
+
+### Added
+
+- On a computer, the sidebar's right edge drags to widen it, the chat making room, so a long name in the file tree can show whole; the width is remembered, a double click brings back the usual 300 px, and it never takes more than half the window.
+- The file viewer shows a Markdown file's images by their path on the computer, relative to the file (`![…](../fig.png)`) or absolute, read from the computer as the viewer reads an image file; a click opens the image viewer. One that is missing or not an image keeps its alt text. Chats still show images from `https:` and `data:` only.
+- The file viewer scales a text or Markdown file on its own, apart from the page: with the pointer over the file, Ctrl/⌘ with + − 0, or Ctrl with the wheel (a trackpad's pinch), from 50% to 200%, the text under the pointer staying where it is. The scale is remembered; while it is not 100% it shows beside the file's buttons, and a click puts it back. Images and PDFs keep their own viewers.
+
+### Changed
+
+- A chat's column and its composer are up to 800 px wide, from 760.
+- The file tree shows VS Code's Material Icon Theme icons for files and folders (Python, TypeScript, Markdown, images, tables, PDF, notebooks, Docker, `src`, `docs`, `node_modules` and so on), in place of a few plain shapes.
+
 ## [0.10.16]
 
 ### Fixed
