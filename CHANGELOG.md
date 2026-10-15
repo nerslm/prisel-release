@@ -4,6 +4,18 @@
 
 Changes in each Prisel release.
 
+## [0.10.13]
+
+### Changed
+
+- The phone keyboard, folded, dictates and backspaces: its one row is Esc, Tab, the microphone, Backspace and unfold, in the browser and in the app alike (unfolded it is as before, with ^C and paste). Dictating with it folded turns the row into one breathing bar of the accent, without words; a touch on it ends.
+- Dictation shows what it hears as it hears it, where the text will go: in the composer as marked text at the caret, in a terminal at its cursor, as pinyin being composed does. The recording panel no longer repeats it. Dictation that ends by itself (the recognizer stopping) now closes the bar or the panel.
+- A Backspace straight after a dictation takes all of it back, in the composer and in a terminal, as a swipe-typed word goes whole; once anything else is typed, or the caret moves, Backspace deletes a character as usual.
+
+### Fixed
+
+- In the iPhone app, folding the keyboard under a dark page no longer shows a light band while the page takes the room back, nor one by the home indicator: the page reports its paper again once its stylesheets apply, the app falls back to the theme's own paper, and the strip under the keyboard is the keyboard's colour.
+
 ## [0.10.12]
 
 ### Fixed
