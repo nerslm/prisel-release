@@ -4,6 +4,12 @@
 
 Changes in each Prisel release.
 
+## [0.10.12]
+
+### Fixed
+
+- On a phone, New Chat's mark no longer runs into the recent chats when the page is shortened (a keyboard open under it, in the app or the browser, or a small phone). The mark and its wordmark take the room actually left above the recent chats and the composer: as it shrinks, the wordmark goes first, then the mark shrinks, then the recent chats show fewer rows, then the mark goes. Chats or a computer arriving still never move it, and the keyboard comes in once the entrance has ended.
+
 ## [0.10.11]
 
 ### Added
