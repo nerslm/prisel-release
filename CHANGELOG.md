@@ -4,6 +4,22 @@
 
 Changes in each Prisel release.
 
+## [0.10.11]
+
+### Added
+
+- The phone keyboard's pinyin learns on the computer: a word or sentence chosen, or a phrase chosen in pieces (我想 then 去), comes first under its pinyin and its initials next time, and builds longer sentences. Every phone and browser typing into the computer shares what it has learned, and a browser clearing its storage loses none of it. A dot marks a learned candidate; a long press forgets it.
+- Pinyin can be typed by initials and in part: each syllable in full, by its initial (zh, ch and sh count as one) or, the last one, cut short, so `nih`, `fwq`, `zhd` and `wm` find 你好, 服务器, 知道 and 我们 first, and what was chosen before comes first by its initials too (我不知道 for `wbzd`, once typed). The candidates start with the three likeliest sentences, so a wrong first guess usually has the right one beside it.
+- The web client and prisel.app are ready for the Prisel iOS app, now in testing: in the app, its own native keyboard (Rime pinyin, dictation, a tap back the moment a key goes down) types into the conversation and the terminal in place of the built-in one, and Google or GitHub sign-in runs in the system's browser sheet and comes back signed in. prisel.app names the app for its domain and trades the sheet's one-time sign-in code (good once, for a minute) for a session in the app.
+
+### Changed
+
+- The phone keyboard's keys take the accent colour while pressed and fade back as the finger lifts, so even a quick tap shows.
+
+### Fixed
+
+- On a phone, New Chat's mark stood still once the built-in keyboard folded: it showed again but no longer moved.
+
 ## [0.10.10]
 
 ### Added
