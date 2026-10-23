@@ -4,6 +4,16 @@
 
 Changes in each Prisel release.
 
+## [0.10.20]
+
+### Changed
+
+- On a touch screen in the desktop layout (iPhone Duo held open, an iPad), the scene behind the interface (the mark's plate with its rulers, the archive's cards in their drawers) gives way to the phone's living mark, beside New Chat's heading: the same particle knot, drawn on a small canvas only while New Chat shows, instead of the whole window every frame. The archive is the printed card beside the detail; on iPhone Duo, where the card has no room, the detail takes the width.
+
+### Fixed
+
+- On a large touch screen (iPhone Duo held open, an iPad), scaling a chat's or a file's text (a pinch, or Ctrl/⌘ with + −) changes its size, instead of leaving the letters as they were and squeezing or spreading only the lines: iOS's text autosizing no longer puts their size back.
+
 ## [0.10.19]
 
 ### Changed
