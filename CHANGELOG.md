@@ -4,6 +4,19 @@
 
 Changes in each Prisel release.
 
+## [0.10.19]
+
+### Changed
+
+- The mobile layout is for widths up to 840 px, from 900: iPhone Duo held open (866 points beside its status bar) gets the desktop layout, as a browser window 841 to 900 px wide now does; an iPad held upright keeps the mobile one.
+- Up to 1200 px wide, the side panel (tasks, changes, the session) opens over the conversation and starts closed, instead of taking room beside it, where a pinned sidebar left the conversation too narrow.
+- On a touch screen in the desktop layout (iPhone Duo held open, an iPad), the app ends above the system keyboard, as the mobile layout does; while the keyboard is up, the top bar, the composer's project and folder lines and its key hints give way to the conversation, and New Chat is its composer.
+
+### Fixed
+
+- On iPhone Duo, the iPhone app fills both displays instead of a phone-sized window (beside the outer display's status bar, centred on the inner one, with the keyboard's sides cut off): it is built with the iOS 27.1 SDK. Opened, the inner display shows the desktop layout, typed into with the system keyboard; closed, the outer one is a phone as before, with the app's keyboard, which spans the display's whole width under the page. The page keeps clear of the status bar and camera at the outer display's side.
+- In the iPhone app, the keyboard's bottom strip (← → − microphone / ↑ ↓) narrows its keys on screens under 412 points instead of pushing the whole keyboard off the screen's left edge.
+
 ## [0.10.18]
 
 ### Added
