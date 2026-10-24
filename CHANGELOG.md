@@ -4,6 +4,16 @@
 
 Changes in each Prisel release.
 
+## [0.10.22]
+
+### Changed
+
+- A chat shows more of the conversation on a touch screen. In the desktop layout (iPhone Duo held open, an iPad), the top bar and the brand sit nearer the top and the chat starts 34 px higher, its header is 48 px instead of 60, and the project line over its composer is gone. On a phone (iPhone Duo's outer display), the project and number over a chat's title and the project line over its composer are gone, its header is 48 px instead of at least 64, and the chat starts just under the top row. Moving a chat to another project stays in the sidebar's row menu; New Chat keeps its project and folder.
+
+### Fixed
+
+- In the iPhone app on iPhone Duo held open (and an iPad), closing the system keyboard leaves the page whole and in place instead of shifted: while the keyboard is up the page's window ends above it, rather than WebKit scrolling the whole page to the field, and once it is gone the view is back at its top.
+
 ## [0.10.21]
 
 ### Changed
