@@ -4,6 +4,12 @@
 
 Changes in each Prisel release.
 
+## [0.10.21]
+
+### Changed
+
+- On a touch screen in the desktop layout (iPhone Duo held open, an iPad), the conversation has more of the screen: the status bar at the bottom (the connection, Powered by Prisel) is gone, a lost connection showing beside the composer as on a phone; so are the key hints under the composer and the project and number over a chat's title, the chat's header is shorter, and the brand at the top left smaller. A computer's layout is as it was.
+
 ## [0.10.20]
 
 ### Changed
