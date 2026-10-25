@@ -4,6 +4,17 @@
 
 Changes in each Prisel release.
 
+## [0.10.23]
+
+### Added
+
+- In the iPhone app on iPhone Duo held open, a microphone in the bar at the side of the inner display, under the status bar, dictates: a tap listens, another ends, and what is heard goes into the field being typed into, or the composer, as it is heard, revised as the recognizer revises it. The inner display types with the system keyboard, so it has no app keyboard and no microphone key of its own.
+- In the iPhone app on iPhone Duo held open, a keyboard button in the same bar puts up the app's own keyboard (Rime pinyin, dictation, Ctrl, Esc and the arrows) in place of the system's, and its fold key slides it away again. It spans the display, or, with the key right of `/` in its bottom row, splits in two halves, one under each thumb. The composer and the terminal type with it, the one tapped last when both are on screen. The outer display's keyboard is unchanged.
+
+### Fixed
+
+- The iPhone app's keyboard keeps up with fast typing: a quick tap no longer goes missing, and keys pressed close together no longer swap (`nihao` came out as `niho` or `nihoa`). Its keys are pressed through one touch layer, as the system keyboard's are, in the order the fingers come down; the tap you feel comes at once; and a letter no longer redraws the whole keyboard.
+
 ## [0.10.22]
 
 ### Changed
