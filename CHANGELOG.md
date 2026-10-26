@@ -4,6 +4,16 @@
 
 Changes in each Prisel release.
 
+## [0.10.24]
+
+### Fixed
+
+- A computer whose environment sets an HTTP proxy (`HTTPS_PROXY`) is assigned the relay that is nearest to it. It timed the relays through that proxy while its relay connections go direct, so a relay quicker only by way of the proxy could win: in China, through a proxy abroad, Hong Kong over Shanghai. Relays are now timed directly, as the computer connects to them; only when none answers directly are they timed through the proxy, and the computer then connects to its relay through the proxy too.
+
+### Changed
+
+- In the iPhone app on iPhone Duo held open, the split keyboard's halves sit nearer the edges, g and v are on both halves as on the system's split keyboard, the pinyin candidates show over the right half, under the right thumb, and the row of arrows lines up with the halves. Whole or split, the keyboard there reaches down to the bottom edge as the system's does, instead of leaving a band empty under it.
+
 ## [0.10.23]
 
 ### Added
