@@ -4,6 +4,16 @@
 
 Changes in each Prisel release.
 
+## [0.10.27]
+
+### Changed
+
+- A handoff brings what the chat's agent sees of its history, as Claude Code and Codex see theirs after compacting: the last compaction's summary and everything after it. Nothing from before goes; a long chat compacted many times had come to millions of tokens.
+
+### Fixed
+
+- A new chat on Claude Code or Codex shows the model and reasoning effort it will start with, instead of "Default model": the one chosen in Prisel's settings, else the one Claude Code's or Codex's own configuration gives.
+
 ## [0.10.26]
 
 ### Added
