@@ -4,6 +4,18 @@
 
 Changes in each Prisel release.
 
+## [0.10.26]
+
+### Added
+
+- A project can link folders: chats whose working directory is one of them, or inside one, show in it, chats started in Claude Code's or Codex's own terminal or editor included, and a new chat from the project starts in its first folder. A chat moved by hand stays where it was put, and one taken out of a project by hand stays out.
+- A chat can be handed to another backend, or to its own for a fresh context, with Hand Over beside a chat's tasks, from a sidebar row's menu or with `/handoff`: a new chat opens, not yet sent, in the same directory and project, offering to carry on in words you can change, and its backend (where the last handoff went, unless that is the chat's own), model and reasoning effort are chosen as any new chat's. Sending it puts the whole history ahead of your words. Whether the reasoning the chat showed goes along too is a choice that is remembered. Nothing is cut unless the receiving model's context is known and the record would not fit it; then the compacted past, older reads and older long output give way first, and the complete record is kept on the host. Where the context is not known, as with Claude Code and Codex, the whole history goes and the new chat shows about how big it is. Like a fork, the new chat stands on its own and the source chat is left as it was; the record shows as a card.
+
+### Changed
+
+- A computer and a page or terminal of different releases keep working together: they settle on the newest protocol both speak, and new features are announced by name instead of by a new protocol version. When they truly cannot talk, the page says which side to update — run `prisel update` on the computer, or reload the page — instead of reconnecting forever, and the terminal names the command. `prisel host stop` stops any host from this release on, even one it cannot talk to.
+- The sidebar lists every backend's chats in one list, grouped by projects every backend now shares, each chat marked with its backend's logo: Prisel's knot, Claude's spark for Claude Code, OpenAI's blossom for Codex. The tab under the brand chooses whose chats are listed, every backend's (the default) or one's, and each browser remembers it. Opening a chat brings its backend on screen; New Chat starts on the backend listed, or with all of them listed, on the one you chose for a new chat last, and a new chat can change backend until its first message. Pins are one list too. The projects and pins Claude Code and Codex kept of their own merge in once, a project of the same name becoming one; their former files are left untouched.
+
 ## [0.10.25]
 
 ### Added
