@@ -4,6 +4,20 @@
 
 Changes in each Prisel release.
 
+## [0.10.25]
+
+### Added
+
+- A third backend: Codex. Prisel drives the `codex` installed on the host's computer through its own app-server, and every client shows and drives a Codex chat as it does the others: streamed answers and reasoning, commands with their output, file changes with their diff before and after, and approvals with Codex's own choices (once, for the session, always for a command, or deny and tell the agent what to do instead). Messages sent while it works steer the running turn or wait for it; it stops on demand. Five permission modes map to Codex's approval policies and sandboxes, plan mode ends with a plan to approve, and the agent's questions take a choice or a typed answer. Chats started in Codex's own terminal or editor are listed and continue here, and the other way round. `!` commands, compaction, forks, renaming, deletion, subagents as background tasks with their own conversation, Codex's skills as `/` commands and `/review`, models and reasoning effort, Codex's rate limits in `/usage`, and signing in (with a code from any device, a browser on the host's computer, or an OpenAI API key) all go through Codex. Prisel never writes Codex's configuration; until a default permission mode is chosen in Prisel, new chats start as Codex is configured.
+
+### Changed
+
+- Update glob to 14.0.3 and minimatch to 11.0.3 for advisories GHSA-3g3m-2fjr-6pw4 and GHSA-g3hv-75wg-m249.
+
+### Fixed
+
+- Refreshing the model catalog works again when it has not changed since the last check: Models.dev then answers that it has not, and the installed `prisel` took that answer for a redirect and failed with `UnexpectedRedirect fetching "https://models.dev/catalog.json"`. The cached models were kept either way. A redirect is still refused, not followed.
+
 ## [0.10.24]
 
 ### Fixed
