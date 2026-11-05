@@ -4,6 +4,14 @@
 
 Changes in each Prisel release.
 
+## [0.10.28]
+
+### Added
+
+- Plugins: what you add to Prisel for yourself. A plugin is a folder in `plugins` under Prisel's folder (`~/.prisel/plugins`), with a part that runs on the computer and keeps going (its state, actions, background work) and a part that adds views to the web client; either can be TypeScript or JavaScript with JSX, and Prisel compiles them. A plugin can give the agents of every backend tools of its own (Prisel's own as tools, Claude Code through the host's MCP server `prisel`, Codex as dynamic tools for chats started after) and bring one of its views up for the chat that called. A change to its files loads it again at once. Plugins show only on pages the computer serves itself, not on remote or phone pages. The sidebar's Plugins lists them with their views; from each one's menu it can be turned off and on, put back as an earlier version (each version that loaded is kept, and going back keeps the files as they were first), or deleted (its folder goes to `plugin-trash`, its data and versions stay). Pause all plugins is a safe mode in which none runs; a page opened with `?safe` after its address shows no plugin's views; and a plugin whose start hung the host is turned off when the host starts again, saying why. The Watchlist example in `examples/plugins` shows quotes and lets an agent change the list.
+- Creator mode, for writing plugins with an agent: choose it on a new chat before its first message, or on a handoff, or start one with Let the agent write a plugin in the sidebar's Plugins. The chat keeps it, marked under its title. Its agent, on any backend, gets the guide to writing plugins, a look at every plugin as the computer and your pages have it (why one failed to load, with file and line; its views open on the page, where they are, how much room they have and their text as rendered; its log and saved versions), a way to open a plugin's view in front of you, and a way back to a saved version once you agree. It writes the plugin's files itself, and you see each change at once.
+- The main area is a workbench: the chat, tasks, changes, session details, files and plugins' views are tabs in groups, in rows and columns. Drag a tab onto another group to join it, onto a group's edge to split it, or out to float it; resize, maximize and close them, and open any view from Views in the top bar or a group's +. Each project keeps its own arrangement. On a narrow screen views open in a drawer beside the chat.
+
 ## [0.10.27]
 
 ### Changed
