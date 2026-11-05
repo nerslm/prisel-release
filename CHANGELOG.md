@@ -4,6 +4,12 @@
 
 Changes in each Prisel release.
 
+## [0.10.30]
+
+### Added
+
+- Plugins can talk to a chat as someone typing in it does: `plugin.chat({ backend, sessionId }).send(text, …)` puts a message into the chat (starting it working, steering a run in progress or following it, opening a chat that is not loaded) and resolves with the agent's answer once the run that took it up ends, telling the plugin along the way when the chat took the message up and each thing the agent says, so it can pass on more than the last answer. What the chat asks meanwhile, such as an approval, goes to the plugin as well as to the page, and the first answer counts; `interrupt()` stops it. A message from elsewhere (`source: "wechat"`) reaches the agent as Claude Code's channels send theirs, and the page shows it with where it came from. A messenger plugin can so connect WeChat to one chat.
+
 ## [0.10.28]
 
 ### Added
