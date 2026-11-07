@@ -4,6 +4,17 @@
 
 Changes in each Prisel release.
 
+## [0.10.31]
+
+### Added
+
+- Light visuals, in Settings → Appearance: no 3D scene and no frosted glass, for when the graphics card is busy and the page stutters. New Chat shows the phone's living mark beside its heading and the archive its printed cards, as on a touch screen, and what was frosted is a plain panel. Kept per browser.
+
+### Fixed
+
+- Opening a chat no longer shows an empty file view that its close button could not close: a file shows only while one is open, and closing its view always closes it.
+- The chat's tasks, changes and session details stay beside it: they can be moved and floated but no longer closed, and those closed before come back.
+
 ## [0.10.30]
 
 ### Added
