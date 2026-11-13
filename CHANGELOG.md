@@ -4,6 +4,12 @@
 
 Changes in each Prisel release.
 
+## [0.10.32]
+
+### Added
+
+- Codex's Fast speed in the model and effort control (the lightning button): Standard or Fast, for a chat and for a new one, with what Fast gives and costs as Codex says. The lightning fills while a chat goes at Fast, including when Codex's own configuration chose it, which Prisel did not show before.
+
 ## [0.10.31]
 
 ### Added
