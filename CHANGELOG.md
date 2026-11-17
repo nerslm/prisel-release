@@ -4,6 +4,12 @@
 
 Changes in each Prisel release.
 
+## [0.10.33]
+
+### Fixed
+
+- A Claude Code chat opened again keeps the effort it last ran with. It used to go at its model's own default when its CLI started again, which for Fable 5.2 is medium (Claude Code applies no settings' effort to it), and stayed there after `/model`.
+
 ## [0.10.32]
 
 ### Added
