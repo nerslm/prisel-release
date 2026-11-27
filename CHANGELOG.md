@@ -4,6 +4,18 @@
 
 Changes in each Prisel release.
 
+## [0.10.35]
+
+### Added
+
+- `/usage` in Antigravity chats: each model group's 5-hour and weekly limits (Gemini, and Claude and GPT), how much of each is used and when it resets, and the plan, as Antigravity's own `/usage` shows them.
+- `/btw` in Antigravity chats: a side question answered from everything said so far, as Antigravity's own `/btw` answers it, without the chat seeing it or going on. It may read files and search the web, and changes nothing.
+- Full access for Antigravity chats: Antigravity runs in its automatic mode and Prisel allows, once, whatever it still asks about, for that chat.
+
+### Fixed
+
+- An Antigravity chat no longer fails on every message when a plugin offers a tool with a list whose items are not described (Gemini refused the whole request: `items: missing field`). Prisel now says they can be anything.
+
 ## [0.10.34]
 
 ### Added

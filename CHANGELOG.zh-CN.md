@@ -4,6 +4,18 @@
 
 Prisel 每个版本的变化。
 
+## [0.10.35]
+
+### 新增
+
+- Antigravity 会话可以用 `/usage` 了：按模型分组（Gemini 一组，Claude 和 GPT 一组）显示 5 小时和每周额度，各用了多少、什么时候重置，以及套餐，与 Antigravity 自己的 `/usage` 一致。
+- Antigravity 会话可以用 `/btw` 了：根据目前为止的全部对话回答一个旁问，和 Antigravity 自己的 `/btw` 一样，主对话看不到，也不会因此继续往下做。旁问只能读文件和搜索网页，不会改动任何东西。
+- Antigravity 会话新增「完全访问」：Antigravity 以自动模式运行，它仍然要确认的操作由 Prisel 替你允许一次，只对当前会话生效。
+
+### 修复
+
+- 插件提供的工具里如果有没写明元素类型的列表，Antigravity 会话以前每条消息都会失败（Gemini 会拒绝整个请求：`items: missing field`）。现在 Prisel 会把它标为"元素可以是任意类型"，不再出错。
+
 ## [0.10.34]
 
 ### 新增
