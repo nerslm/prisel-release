@@ -4,6 +4,13 @@
 
 Changes in each Prisel release.
 
+## [0.10.36]
+
+### Fixed
+
+- `/usage` in an Antigravity chat shows the usage as it is when you ask. It used to show what Antigravity had last fetched, often from before the chat's latest turns, until you refreshed.
+- `/usage` in an Antigravity chat lists the limits as Antigravity does: under each model group, with the models it covers, its weekly limit and its 5-hour limit, each with how much is used. It used to call the 5-hour limit "Current session".
+
 ## [0.10.35]
 
 ### Added
