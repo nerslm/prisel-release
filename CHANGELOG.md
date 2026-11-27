@@ -4,6 +4,12 @@
 
 Changes in each Prisel release.
 
+## [0.10.34]
+
+### Added
+
+- Antigravity as a fourth backend: chats run in the `agy` installed on the host's computer (Google's Antigravity CLI), beside Prisel, Claude Code and Codex. Start one from the backend control, open the chats `agy` keeps, including those started in `agy` itself, and go on with them. Its answers and thinking stream, its tools show as cards, and its permission requests ask with its own choices. Choose its model, thinking level and mode (ask, accept edits, decide automatically, plan); they stay as chosen when Antigravity restarts. Images, its slash commands, automatic titles, context usage and messages queued while it works are all there, and so are plugins' tools and creator mode. Sign in with `agy` in a terminal on the host's computer. Steering into a running turn, compaction, forks, renaming, `/usage` and signing in from Prisel are not there yet.
+
 ## [0.10.33]
 
 ### Fixed
